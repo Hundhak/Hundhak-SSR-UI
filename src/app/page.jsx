@@ -1,10 +1,9 @@
-import Link from "next/link"
+import HeroSection from "@/components/ui/hero-section"
 
 export default function Home() {
   return (
     <div>
-      <h1>Hundhak</h1>
-      <Link href="/news">Nyheter</Link>
+      <HeroSection />
     </div>
   )
 }

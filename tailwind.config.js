@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'accent-teal': '#7FB3A4',
-        'accent-orange': '#FFB84D',
-        'main-beige': '#f3f1eb'
+        primary: 'rgb(167, 199, 231)',  // Pale Sky Blue
+        accent: 'rgb(18, 25, 17)',   // Dark Green
+        secondary: '#465f54' // Soft Sage Green
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

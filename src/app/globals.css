@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
+  --primary-color-rgb: 202, 193, 174; /* Pale Beige */
+  --accent-color-rgb: 18, 25, 17;  /* Dark Green */
+  --secondary-color-rgb: 214, 231, 211;  /* Soft Sage Green */
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +19,28 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(var(--primary-color-rgb));
+}
+
+header {
+  background-color: rgb(var(--primary-color-rgb));
+}
+
+a {
+  color: rgb(var(--accent-color-rgb));
+}
+
+button {
+  background-color: rgb(var(--accent-color-rgb));
+  border: none;
+  padding: 10px 20px;
+  color: rgb(var(--foreground-rgb));
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgba(var(--accent-color-rgb), 0.8); /* Slightly darker green for hover effect */
 }
 
 @layer utilities {

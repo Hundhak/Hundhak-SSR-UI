@@ -1,5 +1,10 @@
 "use client"
+import CardGrid from "./components/card-grid"
 
 export default function News() {
-  return <h2>News</h2>
+  return (
+    <div>
+      <CardGrid />
+    </div>
+  )
 }

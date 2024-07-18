@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <div className={inter.className}>{children}</div>
+        <div className={`${inter.className} bg-white`}>{children}</div>
         <Footer />
       </body>
     </html>

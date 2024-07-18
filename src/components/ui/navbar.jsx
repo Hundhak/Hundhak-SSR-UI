@@ -1,3 +1,8 @@
+/**
+ * Navbar component.
+ * @author Miranda Holmlund
+ */
+
 import React, { useState } from 'react';
 
 const Navbar = () => {

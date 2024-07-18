@@ -10,13 +10,13 @@
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 202, 193, 174; /* Pale Beige */
+    --primary: 40.71 20.9% 73.73%; /* Pale Beige */
     --primary-foreground: 0 0% 98%;
-    --secondary: 214, 231, 211;  /* Soft Sage Green */
-    --secondary-foreground: 0 0% 9%;
+    --secondary: 111 29.41% 86.67%;  /* Soft Sage Green */
+    --secondary-foreground: 0 0% 100%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
-    --accent: 18, 25, 17;  /* Dark Green */
+    --accent: 229.41, 30.36%, 78.04%;  /* Pale Blue */
     --accent-foreground: 0 0% 9%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -64,28 +64,15 @@
     @apply border-border;
   }
   body {
-    color: rgb(var(--foreground));
-    background-color: rgb(var(--primary));
+    color: hsl(var(--foreground));
+    background-color: hsl(var(--primary));
   }
 }
 
 header {
-  background-color: rgb(var(--primary));
+  background-color: hsl(var(--primary));
 }
 
-a {
-  color: rgb(var(--accent));
-}
-
-button {
-  background-color: rgb(var(--accent));
-  border: none;
-  padding: 10px 20px;
-  color: rgb(var(--foreground));
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: rgba(var(--accent), 0.8); /* Slightly darker green for hover effect */
-}
+/* a {
+  color: hsl(var(--accent));
+} */

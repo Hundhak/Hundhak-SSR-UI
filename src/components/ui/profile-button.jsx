@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Link from "next/link"
+import { Button } from "./button"
 
 const ProfileButton = ({ isLoggedIn, profileImageUrl }) => {
   return (
@@ -14,12 +16,9 @@ const ProfileButton = ({ isLoggedIn, profileImageUrl }) => {
           />
         </a>
       ) : (
-        <a
-          href="/login"
-          className="font-semibold text-lg bg-secondary text-white px-4 py-2 rounded-md transition duration-300"
-        >
-          Login
-        </a>
+        <Link href={'/login'}>
+          <Button variant="secondary">Login</Button>
+        </Link>
       )}
     </div>
   )

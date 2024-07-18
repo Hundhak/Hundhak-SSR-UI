@@ -1,5 +1,11 @@
-
+import LoginForm from "./components/login-form"
+import WelcomeMessage from "./components/welcome-message"
 
 export default function Login() {
-  return <h2>Login</h2>
+  return (
+    <div>
+      <WelcomeMessage />
+      <LoginForm />
+    </div>
+  )
 }

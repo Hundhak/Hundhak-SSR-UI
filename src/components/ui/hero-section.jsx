@@ -1,3 +1,8 @@
+/**
+ * Hero section component.
+ * @author Miranda Holmlund
+ */
+
 import Image from 'next/image'
 
 const HeroSection = () => {

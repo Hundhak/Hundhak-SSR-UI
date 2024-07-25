@@ -23,7 +23,7 @@ const InteractiveMap = ({ markers }) => {
       onBoundsChanged={({ center, zoom }) => { 
         setCenter(center) 
         setZoom(zoom) 
-      }} 
+      }}
     >
         {markers.map((marker, index) => (
           <Marker

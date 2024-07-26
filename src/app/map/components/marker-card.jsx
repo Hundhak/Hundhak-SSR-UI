@@ -13,7 +13,7 @@ const MarkerCard = ({ title, description, content, closeFunction, imgUrl }) => {
       <Card className="w-[350px] p-2">
         <Image 
           src={imgUrl}
-          alt="Blog Post Image"
+          alt="Marker Image"
           width={400}
           height={225}
           className="aspect-video w-full object-cover rounded-lg"

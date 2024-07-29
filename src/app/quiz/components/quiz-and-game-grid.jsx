@@ -14,7 +14,7 @@ const items = [
   },
   {
     imgUrl: '/images/quiz-stock.webp',
-    title: 'Valpvård Quiz',
+    title: 'Valpvård',
     description: 'Lär dig om valpar och deras vård.',
     content: 'Hur mycket vet du om att ta hand om en valp? Gör vårt quiz och lär dig mer om valpvård.',
     type: "quiz"

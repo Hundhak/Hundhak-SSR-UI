@@ -5,6 +5,7 @@
 import { Card, CardContent, CardTitle, CardFooter, CardHeader, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 
 const QGCard = ({ imgUrl, title, content, description, footer }) => {
@@ -24,9 +25,11 @@ const QGCard = ({ imgUrl, title, content, description, footer }) => {
           </CardHeader>
           <CardContent>{content}</CardContent>
           <CardFooter>
-            <Button>
-              <p>{footer}</p>
-            </Button>
+            <Link href={`/quiz/${title}`}>
+              <Button>
+                <p>{footer}</p>
+              </Button>
+            </Link>
           </CardFooter>
         </Card>
     </div>

@@ -9,7 +9,7 @@ import { useState } from "react"
 import MarkerCard from "./marker-card"
 
 const InteractiveMap = ({ markers }) => {
-  const [center, setCenter] = useState([50.879, 4.6997])
+  const [center, setCenter] = useState([60.6749, 17.1413])
   const [zoom, setZoom] = useState(11)
   const [hoveredTitle, setHoveredTitle] = useState(null)
   const [selectedMarker, setSelectedMarker] = useState(null)

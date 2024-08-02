@@ -6,6 +6,7 @@ import QGCard from "./qg-card"
 
 const items = [
   {
+    url: 'hundraser',
     imgUrl: '/images/quiz-stock.webp',
     title: 'Hundras Quiz',
     description: 'Testa dina kunskaper om olika hundraser!',
@@ -13,6 +14,7 @@ const items = [
     type: "quiz"
   },
   {
+    url: 'valpvard',
     imgUrl: '/images/quiz-stock.webp',
     title: 'Valpvård',
     description: 'Lär dig om valpar och deras vård.',
@@ -20,6 +22,7 @@ const items = [
     type: "quiz"
   },
   {
+    url: 'fanga-ballen',
     imgUrl: '/images/game-stock.webp',
     title: 'Fånga Bollen',
     description: 'Hjälp hunden att fånga så många bollar som möjligt.',
@@ -27,6 +30,7 @@ const items = [
     type: "game"
   },
   {
+    url: 'agility-spel',
     imgUrl: '/images/game-stock.webp',
     title: 'Hund Agility',
     description: 'Träna din hund i en agilitybana.',
@@ -34,6 +38,7 @@ const items = [
     type: "game"
   },
   {
+    url: 'hundhalsa',
     imgUrl: '/images/quiz-stock.webp',
     title: 'Hundens Hälsa Quiz',
     description: 'Hur mycket vet du om hundens hälsa?',
@@ -41,6 +46,7 @@ const items = [
     type: "quiz"
   },
   {
+    url: 'matdags-spel',
     imgUrl: '/images/game-stock.webp',
     title: 'Matdags',
     description: 'Hjälp hunden att hitta sin mat.',
@@ -62,7 +68,7 @@ const QuizAndGameGrid = ({ selectedCategory }) => {
   return (
     <div className="grid grid-cols-1 gap-6 px-4 py-8 sm:grid-cols-1 md:grid-cols-3 lg:px-8 xl:grid-cols-4">
       {filteredItems.map(item => (
-        <QGCard key={item.title} imgUrl={item.imgUrl} title={item.title} description={item.description} content={item.content} footer={item.type === "game" ? gameFooter : quizFooter}/>
+        <QGCard key={item.title} url={item.url} imgUrl={item.imgUrl} title={item.title} description={item.description} content={item.content} footer={item.type === "game" ? gameFooter : quizFooter}/>
       ))}
     </div>
   )

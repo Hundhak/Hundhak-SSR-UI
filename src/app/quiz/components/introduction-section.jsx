@@ -14,7 +14,7 @@ const IntroductionSection = () => {
         src={"/images/games-bg.webp"}
         className="absolut inset-0 object-cover opacity-90" 
         /> */}
-        <div className="relaitve z-10 w-auto xl:w-1/2 text-center space-y-6 px-4 sm:px-6 md:px-8 -mt-12 bg-opacity-60 bg-green-50">
+        <div className="relative z-10 w-auto xl:w-1/2 text-center space-y-6 px-4 sm:px-6 md:px-8 -mt-12 bg-opacity-60 bg-green-50">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
             <p>Välkommen till vår quiz- och spelhörna!</p>
           </h1>

@@ -14,8 +14,6 @@ export default function Quiz() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("")
 
-  console.log(selectedCategory)
-
   return (
     <div>
       <IntroductionSection></IntroductionSection>

@@ -8,7 +8,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 
-const QGCard = ({ imgUrl, title, content, description, footer }) => {
+const QGCard = ({ url, imgUrl, title, content, description, footer }) => {
   return (
     <div>
         <Card>
@@ -25,7 +25,7 @@ const QGCard = ({ imgUrl, title, content, description, footer }) => {
           </CardHeader>
           <CardContent>{content}</CardContent>
           <CardFooter>
-            <Link href={`/quiz/${title}`}>
+            <Link href={`/quiz/${url}`}>
               <Button>
                 <p>{footer}</p>
               </Button>

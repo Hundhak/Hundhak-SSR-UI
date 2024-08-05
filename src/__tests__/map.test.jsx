@@ -4,6 +4,7 @@ import { describe, test, expect, vi } from 'vitest';
 import InteractiveMap from '@/app/map/components/interactive-map';
 import MarkerCard from '@/app/map/components/marker-card';
 import Map from '@/app/map/page';
+import Image from 'next/image';
 
 // Mock the MarkerCard component
 vi.mock('@/app/map/components/marker-card', () => ({
@@ -13,7 +14,7 @@ vi.mock('@/app/map/components/marker-card', () => ({
       <h1>{title}</h1>
       <p>{description}</p>
       <div>{content}</div>
-      <img src={imgUrl} alt="marker" />
+      <Image src={imgUrl} alt='marker' />
       <button onClick={closeFunction}>Close</button>
     </div>
   ),

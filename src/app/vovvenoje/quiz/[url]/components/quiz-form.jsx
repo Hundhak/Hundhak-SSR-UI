@@ -79,7 +79,7 @@ const QuizForm = () => {
        <h1 className="text-xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Resultat</h1>:
        <h1 className="text-xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Quiz</h1> }
       {questions.map((question, index) => (
-        <div className={`${currentQuestion === index && !isSubmitted ? "" : "hidden"}`}>
+        <div key={index} className={`${currentQuestion === index && !isSubmitted ? "" : "hidden"}`}>
         <Question 
         key={index} 
         prompt={question.prompt} 

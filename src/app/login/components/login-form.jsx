@@ -88,7 +88,7 @@ export default function LoginForm() {
                 <Label htmlFor="remember">Remember me</Label>
               </div> */} 
               <Button type="submit" className="w-full" variant="secondary">
-                Login
+                Logga in
               </Button>
               <FormMessage>
                 <Link href={'#'} className="text-muted-foreground hover:text-gray-400 underline pl-28" prefetch={false}>Inget konto? Skapa ett här</Link>

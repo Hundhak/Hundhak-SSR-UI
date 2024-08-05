@@ -35,7 +35,7 @@ const Navbar = () => {
         <a href="/" className="font-semibold">Start</a>
         <a href="/news" className="font-semibold">Nyheter</a>
         <a href="/map" className="font-semibold">Karta</a>
-        <a href="/quiz" className="font-semibold">Quiz</a>
+        <a href="/vovvenoje" className="font-semibold">Vovvenöje</a>
       </nav>
     </div>
   )

@@ -6,6 +6,7 @@
 import Question from "./question"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 //Placeholder for now.
 // TODO: Have a micro service that handles the questions.
@@ -115,6 +116,9 @@ const QuizForm = () => {
               </div>
             ))}
           </div>
+          <Button className="mt-8">
+            <Link href={"/vovvenoje"}>Tillbaka till vovvenöje</Link>
+          </Button>
         </div>
       )}
     </div>

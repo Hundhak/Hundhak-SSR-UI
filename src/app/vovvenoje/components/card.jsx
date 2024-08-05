@@ -9,11 +9,13 @@ import Link from "next/link"
 
 
 const QGCard = ({ url, imgUrl, title, content, description, footer }) => {
+
+
   return (
     <div>
         <Card>
           <Image
-          alt="Image for game or quiz card" 
+          alt="Image for card" 
           src={imgUrl}
           width={400}
           height={225}
@@ -25,7 +27,7 @@ const QGCard = ({ url, imgUrl, title, content, description, footer }) => {
           </CardHeader>
           <CardContent>{content}</CardContent>
           <CardFooter>
-            <Link href={`/quiz/${url}`}>
+            <Link href={`/vovvenoje${url}`}>
               <Button>
                 <p>{footer}</p>
               </Button>

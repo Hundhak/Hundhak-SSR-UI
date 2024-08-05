@@ -2,11 +2,11 @@
  * A grid for displaying the current quizzes and games.
  */
 
-import QGCard from "./qg-card"
+import QGCard from "./card"
 
 const items = [
   {
-    url: 'hundraser',
+    url: '/quiz/hundraser',
     imgUrl: '/images/quiz-stock.webp',
     title: 'Hundras Quiz',
     description: 'Testa dina kunskaper om olika hundraser!',
@@ -14,7 +14,7 @@ const items = [
     type: "quiz"
   },
   {
-    url: 'valpvard',
+    url: '/quiz/valpvard',
     imgUrl: '/images/quiz-stock.webp',
     title: 'Valpvård',
     description: 'Lär dig om valpar och deras vård.',
@@ -22,7 +22,7 @@ const items = [
     type: "quiz"
   },
   {
-    url: 'fanga-ballen',
+    url: '/game/fanga-ballen',
     imgUrl: '/images/game-stock.webp',
     title: 'Fånga Bollen',
     description: 'Hjälp hunden att fånga så många bollar som möjligt.',
@@ -30,7 +30,7 @@ const items = [
     type: "game"
   },
   {
-    url: 'agility-spel',
+    url: '/game/agility-spel',
     imgUrl: '/images/game-stock.webp',
     title: 'Hund Agility',
     description: 'Träna din hund i en agilitybana.',
@@ -38,7 +38,7 @@ const items = [
     type: "game"
   },
   {
-    url: 'hundhalsa',
+    url: '/quiz/hundhalsa',
     imgUrl: '/images/quiz-stock.webp',
     title: 'Hundens Hälsa Quiz',
     description: 'Hur mycket vet du om hundens hälsa?',
@@ -46,7 +46,7 @@ const items = [
     type: "quiz"
   },
   {
-    url: 'matdags-spel',
+    url: '/game/matdags-spel',
     imgUrl: '/images/game-stock.webp',
     title: 'Matdags',
     description: 'Hjälp hunden att hitta sin mat.',
@@ -56,7 +56,7 @@ const items = [
 ]
 
 
-const QuizAndGameGrid = ({ selectedCategory }) => {
+const Grid = ({ selectedCategory }) => {
 
   const gameFooter = "Spela"
   const quizFooter = "Gör quiz"
@@ -74,4 +74,4 @@ const QuizAndGameGrid = ({ selectedCategory }) => {
   )
 }
 
-export default QuizAndGameGrid
+export default Grid

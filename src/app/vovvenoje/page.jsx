@@ -5,11 +5,11 @@
 "use client"
 
 import { useState } from "react"
-import QuizAndGameGrid from "./components/quiz-and-game-grid"
+import Grid from "./components/grid"
 import IntroductionSection from "./components/introduction-section"
 import GridHeader from "./components/grid-header"
 
-export default function Quiz() {
+export default function VovveNoje() {
 
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("")
@@ -18,7 +18,7 @@ export default function Quiz() {
     <div>
       <IntroductionSection></IntroductionSection>
       <GridHeader searchTerm={searchTerm} setSearchTerm={setSearchTerm} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}></GridHeader>
-      <QuizAndGameGrid selectedCategory={selectedCategory}></QuizAndGameGrid>
+      <Grid selectedCategory={selectedCategory}></Grid>
     </div>
   )
 }

@@ -22,19 +22,19 @@ const items = [
     type: "quiz"
   },
   {
-    url: '/game/fanga-ballen',
+    url: '/game/givetreat',
     imgUrl: '/images/game-stock.webp',
-    title: 'Fånga Bollen',
-    description: 'Hjälp hunden att fånga så många bollar som möjligt.',
-    content: 'Ett roligt och utmanande spel där du hjälper hunden att fånga bollar. Hur många kan du fånga?',
+    title: 'Belöna hunden',
+    description: 'Belöna hunden genom att ge den en godis eller leksak.',
+    content: 'Ett enkelt spel där du kan dra en leksal eller godis och ge till en hund.',
     type: "game"
   },
   {
-    url: '/game/agility-spel',
+    url: '/game/dogspa',
     imgUrl: '/images/game-stock.webp',
-    title: 'Hund Agility',
-    description: 'Träna din hund i en agilitybana.',
-    content: 'Testa dina färdigheter och träna din hund genom en spännande agilitybana. Kan du klara alla hinder?',
+    title: 'Hundspa',
+    description: 'Ge hunden en härlig spadag.',
+    content: 'Upplev en mysig dag på spa tillsammans med en glad hund som älskar att få massage.',
     type: "game"
   },
   {

@@ -17,7 +17,7 @@ const ProfileButton = ({ isLoggedIn, profileImageUrl }) => {
         </a>
       ) : (
         <Link href={'/login'}>
-          <Button variant="secondary">Login</Button>
+          <Button variant="secondary">Logga in</Button>
         </Link>
       )}
     </div>

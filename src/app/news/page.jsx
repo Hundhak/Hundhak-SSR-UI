@@ -1,5 +1,9 @@
+/**
+ * News page.
+ */
+
 "use client"
-import { set } from "zod"
+
 import CardGrid from "./components/card-grid"
 import Categories from "./components/categories"
 import Searchbar from "./components/search"

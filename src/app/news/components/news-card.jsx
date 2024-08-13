@@ -4,10 +4,12 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 
-const NewsCard = ({imgUrl, articleUrl, title, content}) => {
+
+const NewsCard = ({imgUrl, articleUrl: url, title, content}) => {
+
   return (
     <div className="group overflow-hidden rounded-lg bg-background shadow-sm transition-all hover:shadow-md">
-      <Link href={articleUrl} className="block" prefetch={false}>
+      <Link href={`/news/${url}`} className="block" prefetch={false}>
         <Image
           src={imgUrl}
           alt="Blog Post Image"
@@ -18,7 +20,7 @@ const NewsCard = ({imgUrl, articleUrl, title, content}) => {
       </Link>
       <div className="p-4">
         <h3 className="text-lg font-semibold text-primary">
-          <Link href={articleUrl} prefetch={false}>
+          <Link href={`/news/${url}`} prefetch={false}>
             {title}
           </Link>
         </h3>
@@ -27,7 +29,7 @@ const NewsCard = ({imgUrl, articleUrl, title, content}) => {
         </p>
         <div className="mt-4">
           <Link
-            href={articleUrl}
+            href={`/news/${url}`}
             prefetch={false}
           >
             <Button>Läs mer <ArrowRightIcon className="h-4 w-6" /></Button>

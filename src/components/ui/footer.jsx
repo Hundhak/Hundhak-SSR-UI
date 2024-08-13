@@ -21,7 +21,7 @@ const Footer = () => {
           <li><Link className="text-gray-600 hover:text-gray-800" href={'/'}>Startsidan</Link></li>
           <li><Link className="text-gray-600 hover:text-gray-800" href={'/news'}>Nyheter</Link></li>
           <li><Link className="text-gray-600 hover:text-gray-800" href={'/map'}>Karta</Link></li>
-          <li><Link className="text-gray-600 hover:text-gray-800" href={'/quiz'}>Quiz</Link></li>
+          <li><Link className="text-gray-600 hover:text-gray-800" href={'/vovvenoje'}>Vovvenöje</Link></li>
         </ul>
       </div>
       <div>

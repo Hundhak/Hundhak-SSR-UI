@@ -10,8 +10,8 @@ const ProfileButton = ({ isLoggedIn, profileImageUrl }) => {
           <Image
             src={profileImageUrl}
             alt="Profile"
-            width={'10'}
-            height={'10'}
+            width={'50'}
+            height={'50'}
             className="rounded-full"
           />
         </a>

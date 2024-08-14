@@ -11,7 +11,7 @@ import Link from 'next/link'
 
 const Header = () => {
 
-  const isLoggedIn = false //TO DO : Implement authentication & user service to enable account feature.
+  const isLoggedIn = true //TO DO : Implement authentication & user service to enable account feature.
 
   return (
     <header className="p-4">

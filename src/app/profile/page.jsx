@@ -39,7 +39,7 @@ export default function Profile() {
   }
 
   return (
-    <div className="mx-auto max-w-md px-4 py-12 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-m md:max-w-4xl lg:max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
       <Header profile={profile} editProfile={editProfile}/>
       <DogList 
         dogs={dogs} 

@@ -8,13 +8,14 @@ import Image from 'next/image'
 import Navbar from './navbar'
 import ProfileButton from './profile-button'
 import Link from 'next/link'
+import { useAuth } from '@/contexts/AuthContext'
 
 const Header = () => {
 
-  const isLoggedIn = true //TO DO : Implement authentication & user service to enable account feature.
+  const { isLoggedIn } = useAuth()
 
   return (
-    <header className="p-4">
+    <header className="p-4 max-w-full">
       <div className="flex items-center justify-between">
         <Link href={'/'}>
           <Image src="/images/logo.png" alt="Logo" width={50} height={50} />

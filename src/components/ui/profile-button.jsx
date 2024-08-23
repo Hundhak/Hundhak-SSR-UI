@@ -1,8 +1,25 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "./button"
+import { useAuth } from "@/contexts/AuthContext"
+import { useEffect, useState } from "react"
 
-const ProfileButton = ({ isLoggedIn, profileImageUrl }) => {
+const ProfileButton = ({ profileImageUrl }) => {
+
+  const { isLoggedIn } = useAuth()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  })
+
+  if(!mounted) return (
+    <div>
+      <div className="w-[50px]"></div>
+    </div>
+  )
+
   return (
     <div className="flex items-center">
       {isLoggedIn ? (
